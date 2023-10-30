@@ -566,6 +566,10 @@ video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -621,6 +625,38 @@ video {
   margin-top: 8rem;
 }
 
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mt-28 {
+  margin-top: 7rem;
+}
+
 .block {
   display: block;
 }
@@ -641,6 +677,10 @@ video {
   width: 4rem;
 }
 
+.w-\[350px\] {
+  width: 350px;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -655,6 +695,18 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.shrink {
+  flex-shrink: 1;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -747,8 +799,30 @@ video {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .self-end {
   align-self: flex-end;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overscroll-x-none {
+  overscroll-behavior-x: none;
 }
 
 .rounded-full {
@@ -787,6 +861,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[red\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
 .p-3 {
@@ -839,6 +918,14 @@ video {
 
 .pt-2 {
   padding-top: 0.5rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
 .text-center {
@@ -1005,6 +1092,10 @@ body{
 }
 
 @media (min-width: 480px) {
+  .sm\:mr-5 {
+    margin-right: 1.25rem;
+  }
+
   .sm\:w-auto {
     width: auto;
   }
@@ -1012,11 +1103,23 @@ body{
   .sm\:self-center {
     align-self: center;
   }
+
+  .sm\:overflow-scroll {
+    overflow: scroll;
+  }
 }
 
 @media (min-width: 768px) {
   .md\:mb-4 {
     margin-bottom: 1rem;
+  }
+
+  .md\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .md\:ml-0 {
+    margin-left: 0px;
   }
 
   .md\:block {
@@ -1069,6 +1172,10 @@ body{
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:overflow-scroll {
+    overflow: scroll;
   }
 
   .md\:bg-transparent {
